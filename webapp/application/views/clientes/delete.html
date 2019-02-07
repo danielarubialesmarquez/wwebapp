@@ -1,0 +1,24 @@
+$def with(datos)
+
+        <div class="div">
+<a href="/clientes"><h1>Delete</h1></a>
+<hr>
+<form method="POST">
+    <label for="nombre_cli">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.nombre_cli" id="nombre_cli" name="nombre_cli">
+    <br>
+    <label for="ape_pa">Apellido Paterno:&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.ape_pa" id="ape_pa" name="ape_pa">
+    <br>
+    <label for="ape_ma">Apellido Materno: &nbsp;</label>
+    <input type="text" readonly="true" value="$datos.ape_ma" id="ape_ma" name="ape_ma">
+    <br>
+    <label for="empresa">Empresa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.empresa" id="empresa" name="empresa">
+    <br>
+    <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" readonly="true" value="$datos.email" id="email" name="email">
+    <br><br>
+    <center><button type="submit" class="btn btn-primary">Delete</button></center>
+</form>
+</div>

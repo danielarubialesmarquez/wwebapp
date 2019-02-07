@@ -1,0 +1,26 @@
+$def with(datos)
+
+<div class="div">
+<h1>Registros de clientes</h1>
+<a href="/insert">Insert</a>
+
+<table>
+    <th>Nombre &nbsp;&nbsp;&nbsp;</th>
+    <th>Apellido<br>Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Apellido<br>Materno&nbsp;&nbsp;</th>
+    <th>Empresa</th>
+    <th>Email&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Delete&nbsp;&nbsp;</th>
+    <th>Update&nbsp;&nbsp;</th>
+    $for row in datos:
+    <tr>
+        <td><a href="/view/$row.nombre_cli">$row.nombre_cli</a></td>
+        <td><a href="/view/$row.nombre_cli">$row.ape_pa</a></td>
+        <td><a href="/view/$row.nombre_cli">$row.ape_ma</a></td>
+        <td><a href="/view/$row.nombre_cli">$row.empresa</a></td>
+        <td><a href="/view/$row.nombre_cli">$row.email</a></td>
+        <td><a href="/delete/$row.nombre_cli">Delete</a></td>
+        <td><a href="/update/$row.nombre_cli">Update</a></td>        
+    </tr>
+</table>
+</div>

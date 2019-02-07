@@ -1,0 +1,23 @@
+$def with(datos)
+
+        <div class="div">
+<a href="/clientes"><h1>Update</h1></a>
+<hr>
+<form method="POST">
+        <label for="nombre_cli">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" value="$datos.nombre_cli" id="nombre_cli" name="nombre_cli">
+        <br>
+        <label for="apepat_cli">Apellido Paterno:&nbsp;&nbsp;</label>
+        <input type="text" value="$datos.ape_pa" id="ape_pa" name="ape_pa">
+        <br>
+        <label for="ape_ma">ApellidoMaterno: &nbsp;</label>
+        <input type="text" value="$datos.ape_ma" id="ape_ma" name="ape_ma">
+        <br>
+        <label for="empresa">Empresa: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" value="$datos.empresa" id="empresa" name="empresa" placeholder="empresa">
+        <br>
+        <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" value="$datos.email" id="email" name="email" placeholder="Email">
+        <br><br>
+    <center><button type="sunmit" class="btn btn-primary">Update</button></center>
+</form>

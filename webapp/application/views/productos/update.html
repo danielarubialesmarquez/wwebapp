@@ -1,0 +1,23 @@
+$def with(datos)
+
+        <div class="div">
+<a href="/productos"><h1>Update</h1></a>
+<hr>
+<form method="POST">
+        <label for="id_pro">ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text"  value="$datos.id_pro" id="id_pro" name="id_pro">
+        <br>
+        <label for="nom_p">Nombre:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text"  value="$datos.nom_p" id="nom_p" name="nom_p">
+        <br>
+        <label for="cantidad">cantidad:&nbsp;</label>
+        <input type="text"  value="$datos.cantidad" id="cantidad" name="cantidad">
+        <br>
+        <label for="fecha">Cadocidad: &nbsp;</label>
+        <input type="text"  value="$datos.fecha" id="fecha" name="fecha">
+        <br>
+        <label for="precio">Precio: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text"  value="$datos.precio" id="precio" name="precio">
+        <br><br>
+    <center><button type="sunmit" class="btn btn-primary">Update</button></center>
+</form>
